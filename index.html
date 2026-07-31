@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TO DO LIST</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1>TO DO LIST</h1>
+        <div class="mode">
+       <button class="light">
+            Light mode
+        </button>
+        </div>
+        <hr>
+    </header>
+    <main class="container">
+        <label for="task">Enter a task</label>
+        <input type="text" id="task" placeholder="Enter a task">
+        <p>
+            Priority
+            <select id="priority">
+                <option>Low</option>
+                <option>Medium</option>
+                <option>High</option>
+            </select>
+        </p>
+        <button>ADD Task</button>
+        <p>
+            Search:
+            <input type="search" id="search" placeholder="Search tasks">
+        </p>
+        <button>
+            All
+        </button>
+        <button>
+            Active
+        </button>
+        <button>
+            Completed
+        </button>
+        <p>
+            Sort
+            <select id="sort">
+                <option>Newest First</option>
+                <option>Oldest First</option>
+                <option>A-Z</option>
+                <option>Z-A</option>
+            </select>
+        </p>
+        <div class="statistics">
+            <p>
+                Statistics
+
+            </p>
+        </div>
+        <p>
+            Total :
+        </p>
+        <p>
+            Completed :
+        </p>
+        <p>
+            Pending :
+        </p>
+        <p>
+            Progress :
+        </p>
+        <h2>Task List</h2>
+
+        <ul id="task-list" class="task-list">
+
+        </ul>
+
+
+
+        <p>No task yet</p>
+        <button>
+            Clear Completed
+        </button>
+        <button>
+            Delete All
+        </button>
+
+    </main>
+    <footer class="footer">
+        <p>Todo App</p>
+    </footer>
+</body>
+
+</html>
