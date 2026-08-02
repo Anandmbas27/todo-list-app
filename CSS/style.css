@@ -15,10 +15,15 @@ button {
    padding: 10px;
    border-radius: 200px;
 }
-.light{
+#light{
 position: absolute;
    top: 0;
 }
 .container{
    font-size: 25px;
+}
+.dark{
+   background-color: black;
+   color: aliceblue;
+
 }

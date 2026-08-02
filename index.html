@@ -10,13 +10,13 @@
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 
-<body>
+<body id="change">
     <header class="header">
         <h1>TO DO LIST</h1>
         <div class="mode">
-       <button class="light">
-            Light mode
-        </button>
+            <button id="light">
+            Dark Mode
+            </button>
         </div>
         <hr>
     </header>
@@ -31,18 +31,18 @@
                 <option>High</option>
             </select>
         </p>
-        <button>ADD Task</button>
+        <button id="add-btn">ADD Task</button>
         <p>
             Search:
             <input type="search" id="search" placeholder="Search tasks">
         </p>
-        <button>
+        <button id="all">
             All
         </button>
-        <button>
+        <button id="active">
             Active
         </button>
-        <button>
+        <button id="completed">
             Completed
         </button>
         <p>
@@ -60,38 +60,45 @@
 
             </p>
         </div>
-        <p>
-            Total :
+        <p>Total :
+            <span id="total-count">0</span>
         </p>
         <p>
             Completed :
+            <span id="completed-count">0</span>
         </p>
         <p>
             Pending :
+            <span id="pending-count">0</span>
         </p>
         <p>
             Progress :
+            <span id="progress-count">0</span>
         </p>
         <h2>Task List</h2>
 
-        <ul id="task-list" class="task-list">
+        <ol id="task-list" class="task-list">
 
-        </ul>
+        </ol>
 
 
 
-        <p>No task yet</p>
-        <button>
+        <p id="no-task-message">
+            No Tasks Found
+        </p>
+        <button id="clear-completed">
             Clear Completed
         </button>
-        <button>
+        <button id="delete-all">
             Delete All
         </button>
 
     </main>
+    <hr>
     <footer class="footer">
         <p>Todo App</p>
     </footer>
+    <script src="js/app.js"></script>
 </body>
 
 </html>
